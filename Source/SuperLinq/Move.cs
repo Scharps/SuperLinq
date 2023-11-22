@@ -53,6 +53,7 @@ public static partial class SuperEnumerable
 
 			var buffer = new T[bufferSize];
 			var length = 0;
+
 			for (; length < bufferSize && MoveNext(e); length++)
 				buffer[length] = e.Current;
 
